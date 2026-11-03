@@ -1,0 +1,34 @@
+1. IDEA ------
+  a Search tool where the users enters the URL and the KEYWORD that they wants to search and the CLI tools finds the appropriate matches without crashing out.
+
+2.HOW WILL THE PROGRAM WORK ?-------
+  The user will enter the url .
+  User will enter the keyword .
+  The script will run that will find the matches.
+  search results will be shown.
+
+3. WHICH CONCEPTS WILL BE USED ?-----
+  REQUEST library to fetch request
+  BEAUTIFULSOUP to fetch scraping
+  Html parser 
+  proxy(maybe)
+  user-agent header
+
+4. PSEUDOCODE
+  1. Prompt the user to input the target URL.
+  2. Prompt the user to input the keyword they want to search for.
+  3. Define a dictionary for headers (including a User-Agent) to avoid getting blocked.
+  4. Send an HTTP GET request to the URL using the requests library with the headers.
+  5. Check if the response status code is 200 (success). If not, display an error and exit safely.
+  6. Pass the response text into BeautifulSoup using an HTML parser (like 'lxml' or 'html.parser').
+  7. Locate and extract all target elements (such as paragraphs, headings, or specific text blocks) from the parsed tree.
+  8. Loop through the extracted elements, convert text to lowercase, and check if the user's keyword is present.
+  9. If a match is found, print the matching content or surrounding context clearly to the console.
+  10. Handle exceptions (like connection errors or missing elements) with try-except blocks to prevent crashes.
+
+5. BRAINSTORMING-----
+    Version 1: Terminal CLI search script.
+
+Version 2: Wrap that exact same search logic into a Tkinter or Web UI.
+
+Version 3: Store the filtered results into an SQLite database or export them to a file.
