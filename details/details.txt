@@ -29,6 +29,6 @@
 5. BRAINSTORMING-----
     Version 1: Terminal CLI search script.
 
-Version 2: Wrap that exact same search logic into a Tkinter or Web UI.
+Version 2: Wraping  that exact same search logic into a Tkinter or Web UI.
 
-Version 3: Store the filtered results into an SQLite database or export them to a file.
+Version 3: Storing the filtered results into an SQLite database or export them to a file.
